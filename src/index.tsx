@@ -36,7 +36,7 @@ interface Row {
 }
 
 export default class extends FlipperPlugin<State, never, PersistedState> {
-  id = 'flipper-plugin-react-native-logging-tools';
+  id = 'flipper-plugin-native-genesis-logger';
 
   constructor(props: any) {
     super(props);

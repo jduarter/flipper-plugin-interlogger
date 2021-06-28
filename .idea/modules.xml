@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/flipper-plugin-react-native-logging-tools.iml" filepath="$PROJECT_DIR$/.idea/flipper-plugin-react-native-logging-tools.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/flipper-plugin-native-genesis-logger.iml" filepath="$PROJECT_DIR$/.idea/flipper-plugin-native-genesis-logger.iml" />
     </modules>
   </component>
 </project>

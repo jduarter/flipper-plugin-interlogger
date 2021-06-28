@@ -1,12 +1,12 @@
 {
   "version": "1.0.1",
   "$schema": "https://fbflipper.com/schemas/plugin-package/v2.json",
-  "name": "flipper-plugin-react-native-logging-tools",
+  "name": "flipper-plugin-native-genesis-logger",
   "title": "RN Logging Tools",
   "description": "An inspector for Flipper to display every event sent by React Native Logging Tools.",
-  "id": "flipper-plugin-react-native-logging-tools",
+  "id": "flipper-plugin-native-genesis-logger",
   "main": "dist/bundle.js",
-  "bugs": "https://github.com/imranMnts/react-native-logging-tools/issues",
+  "bugs": "https://github.com/jduarter/flipper-plugin-native-genesis-logger/issues",
   "flipperBundlerEntry": "src/index.tsx",
   "license": "MIT",
   "keywords": [

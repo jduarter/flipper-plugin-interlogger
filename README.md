@@ -1,11 +1,8 @@
+# flipper-plugin-native-genesis-logger
+
 # Flipper plugin react native logging tools
 
-A flipper plugin to display all events sent to different service via react-native-logging-tools [link](#https://github.com/imranMnts/react-native-logging-tools)
-
-Dependencies:
-
-+ [react-native-flipper](https://fbflipper.com/docs/features/react-native/)
-+ [react-native-logging-tools](https://github.com/imranMnts/react-native-logging-tools)
+A flipper plugin to display all events sent to different service via native-genesis-logger 
 
 ### Installation
 
@@ -16,8 +13,12 @@ Install Flipper [link](https://fbflipper.com/docs/features/react-native/) and co
 #### Flipper plugin
 
 Install the plugin in Flipper
-(Flipper -> Manage Plugins -> Install Plugins -> flipper-plugin-react-native-logging-tools)
+(Flipper -> Manage Plugins -> Install Plugins -> flipper-plugin-native-genesis-logger)
 
 #### React Native Logging Tools
 
-Install this library [link](https://github.com/imranMnts/react-native-logging-tools) and turn on flipper during initialization
+Install this library [link](https://github.com/jduarter/native-genesis-logger) and turn on flipper during initialization
+
+### Autorship / Copyright
+This work has been based in 
+[link](#https://github.com/imranMnts/flipper-plugin-react-native-logging-tools) 
