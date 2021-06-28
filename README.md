@@ -1,7 +1,5 @@
 # flipper-plugin-native-genesis-logger
 
-# Flipper plugin react native logging tools
-
 A flipper plugin to display all events sent to different service via native-genesis-logger 
 
 ### Installation
