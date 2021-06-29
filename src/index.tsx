@@ -35,6 +35,18 @@ interface Row {
   time: string;
 }
 
+const formatDetails = (details: Record<string, any>) => {
+  return (
+    <React.Fragment>
+      {Object.entries(details).map(([ok, ov]) => (
+        <Text>
+          {ok} <Text style={{ color: 'red' }}>=</Text> {ov}
+        </Text>
+      ))}
+    </React.Fragment>
+  );
+};
+
 export default class extends FlipperPlugin<State, never, PersistedState> {
   id = 'flipper-plugin-native-genesis-logger';
 
@@ -50,7 +62,7 @@ export default class extends FlipperPlugin<State, never, PersistedState> {
 
   static defaultPersistedState = {
     events: [],
-  }
+  };
 
   static persistedStateReducer(persistedState: PersistedState, method: string, data: Row): PersistedState {
     try {
@@ -95,14 +107,14 @@ export default class extends FlipperPlugin<State, never, PersistedState> {
 
       this.setState({
         selectedIds: [selectedId],
-        selectedData: {
+        selectedData /*: {
           id,
           service,
           event,
           error,
           params,
           time,
-        },
+        },*/,
       });
     }
   }
@@ -119,13 +131,25 @@ export default class extends FlipperPlugin<State, never, PersistedState> {
   buildRow(row: Row) {
     return {
       columns: {
-        service: {
-          value: <Text>{row.service}️</Text>,
-          filterValue: row.service,
+        level: {
+          value: <Text>{row.level}️</Text>,
+          filterValue: row.level,
+        },
+        scope: {
+          value: <Text>{row.scope}️</Text>,
+          filterValue: row.scope,
         },
         event: {
           value: <Text>{formatEvent(row.event)}</Text>,
           filterValue: row.event,
+        },
+        message: {
+          value: <Text>{row.message}</Text>,
+          filterValue: row.message,
+        },
+        details: {
+          value: <Text>{formatDetails(row.details)}️</Text>,
+          filterValue: row.details,
         },
       },
       key: row.id,

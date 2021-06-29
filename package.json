@@ -1,8 +1,8 @@
 {
-  "version": "1.0.2",
+  "version": "1.0.4",
   "$schema": "https://fbflipper.com/schemas/plugin-package/v2.json",
   "name": "flipper-plugin-native-genesis-logger",
-  "title": "RN Logging Tools",
+  "title": "Native-Genesis Logger",
   "description": "An inspector for Flipper to display every event sent by React Native Logging Tools.",
   "id": "flipper-plugin-native-genesis-logger",
   "main": "dist/bundle.js",
@@ -37,6 +37,7 @@
     "@types/react": "latest",
     "@types/react-dom": "latest",
     "flipper": "latest",
-    "flipper-pkg": "latest"
+    "flipper-pkg": "^0.95.0",
+    "prettier": "^2.3.2"
   }
 }

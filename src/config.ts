@@ -1,13 +1,22 @@
 export const COLUMN_SIZE = {
   service: '15%',
-  event: 'flex'
-}
+  event: 'flex',
+};
 
 export const COLUMNS = {
-  service: {
-    value: 'Service'
+  level: {
+    value: 'Level',
+  },
+  scope: {
+    value: 'Scope',
   },
   event: {
-    value: 'Event'
+    value: 'Event',
   },
-}
+  message: {
+    value: 'Message',
+  },
+  details: {
+    value: 'Details',
+  },
+};
