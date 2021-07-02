@@ -1,6 +1,6 @@
-# flipper-plugin-native-genesis-logger
+# flipper-plugin-interlogger
 
-A flipper plugin to display all events sent to different service via native-genesis-logger 
+A flipper plugin to display all events sent to different service via interlogger 
 
 ### Installation
 
@@ -11,7 +11,7 @@ Install Flipper [link](https://fbflipper.com/docs/features/react-native/) and co
 #### Flipper plugin
 
 Install the plugin in Flipper
-(Flipper -> Manage Plugins -> Install Plugins -> flipper-plugin-native-genesis-logger)
+(Flipper -> Manage Plugins -> Install Plugins -> flipper-plugin-interlogger)
 
 ### Autorship / Copyright
 This work has been based in 

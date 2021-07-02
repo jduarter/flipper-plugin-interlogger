@@ -48,7 +48,7 @@ const formatDetails = (details: Record<string, any>) => {
 };
 
 export default class extends FlipperPlugin<State, never, PersistedState> {
-  id = 'flipper-plugin-native-genesis-logger';
+  id = 'flipper-plugin-interlogger';
 
   constructor(props: any) {
     super(props);
