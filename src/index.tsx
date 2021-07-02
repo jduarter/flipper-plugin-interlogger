@@ -103,7 +103,7 @@ export default class extends FlipperPlugin<State, never, PersistedState> {
     const selectedData: Row | undefined = persistedState.events.find((v: any) => v.id === selectedId);
 
     if (selectedData) {
-      const { service, id, event, error, params, time } = selectedData;
+      //  const { service, id, event, error, params, time } = selectedData;
 
       this.setState({
         selectedIds: [selectedId],
@@ -139,9 +139,9 @@ export default class extends FlipperPlugin<State, never, PersistedState> {
           value: <Text>{row.scope}️</Text>,
           filterValue: row.scope,
         },
-        event: {
-          value: <Text>{formatEvent(row.event)}</Text>,
-          filterValue: row.event,
+        eventName: {
+          value: <Text>{formatEvent(row.eventName)}</Text>,
+          filterValue: row.eventName,
         },
         message: {
           value: <Text>{row.message}</Text>,
