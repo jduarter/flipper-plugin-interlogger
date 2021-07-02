@@ -28,17 +28,23 @@ interface State {
 
 interface Row {
   id: number;
+  level: string;
   service: string;
-  event: string;
+  scope: string;
+  eventName: string;
+  message: string;
+  data: Record<string, any>;
   error?: string;
-  params?: string;
   time: string;
 }
 
-const formatDetails = (details: Record<string, any>) => {
+const formatData = (data: Record<string, any>) => {
+  if (!data) {
+    return null;
+  }
   return (
     <React.Fragment>
-      {Object.entries(details).map(([ok, ov]) => (
+      {Object.entries(data).map(([ok, ov]) => (
         <Text>
           {ok} <Text style={{ color: 'red' }}>=</Text> {ov}
         </Text>
@@ -103,18 +109,9 @@ export default class extends FlipperPlugin<State, never, PersistedState> {
     const selectedData: Row | undefined = persistedState.events.find((v: any) => v.id === selectedId);
 
     if (selectedData) {
-      //  const { service, id, event, error, params, time } = selectedData;
-
       this.setState({
         selectedIds: [selectedId],
-        selectedData /*: {
-          id,
-          service,
-          event,
-          error,
-          params,
-          time,
-        },*/,
+        selectedData,
       });
     }
   }
@@ -147,14 +144,14 @@ export default class extends FlipperPlugin<State, never, PersistedState> {
           value: <Text>{row.message}</Text>,
           filterValue: row.message,
         },
-        details: {
-          value: <Text>{formatDetails(row.details)}️</Text>,
-          filterValue: row.details,
+        data: {
+          value: <Text>{formatData(row.data)}️</Text>,
+          filterValue: row.data,
         },
       },
       key: row.id,
       copyText: JSON.stringify(row, null, 2),
-      filterValue: `${row.service} ${row.event}`,
+      filterValue: `${row.service} ${row.eventName}`,
     };
   }
 

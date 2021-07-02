@@ -1,8 +1,8 @@
 {
-  "version": "1.0.6",
+  "version": "1.0.8",
   "$schema": "https://fbflipper.com/schemas/plugin-package/v2.json",
   "name": "flipper-plugin-interlogger",
-  "title": "Native-Genesis Logger",
+  "title": "Interlogger",
   "description": "An inspector for Flipper to display every event sent by Interlogger.",
   "id": "flipper-plugin-interlogger",
   "main": "dist/bundle.js",

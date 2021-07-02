@@ -10,13 +10,13 @@ export const COLUMNS = {
   scope: {
     value: 'Scope',
   },
-  event: {
+  eventName: {
     value: 'Event',
   },
   message: {
     value: 'Message',
   },
-  details: {
-    value: 'Details',
+  data: {
+    value: 'Data',
   },
 };
